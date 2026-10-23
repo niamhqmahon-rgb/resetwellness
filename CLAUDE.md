@@ -59,5 +59,6 @@ The design was approved by the client; keep changes faithful to it unless asked 
   Impressum details (company, owner, VAT ID), Instagram handle.
 - Higher-resolution photos (hero ≥ 2000 px wide) and team photos on the About pages.
 - Map on the contact page: embed only after consent (GDPR).
-- Legal texts are drafts — need a lawyer's review. "Verträge hier kündigen" needs a real
-  cancellation page for memberships (§ 312k BGB).
+- Legal texts are drafts — need a lawyer's review. Before memberships launch, add a real
+  cancellation page and put a "Verträge hier kündigen" / "Cancel contract here" link back in every footer (§ 312k BGB).
+  The footer link was removed while memberships are "coming soon".
