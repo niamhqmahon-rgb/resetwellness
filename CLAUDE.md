@@ -31,6 +31,8 @@ The design was approved by the client; keep changes faithful to it unless asked 
 ## Rules when editing
 - **Every content change goes into both languages.** Edit the German and the English twin together,
   and keep their structure identical. German copy uses informal "du".
+- **No dashes in visible text** (no —, –, or hyphenated words), in either language: use commas, full stops,
+  "to"/"bis" for ranges, or rewrite. Client request.
 - The header (nav) and footer are repeated in every page — change them in all 16 files.
 - The EN/DE switch links each page to its twin, and each page has `hreflang` alternates; keep them correct
   when renaming or adding pages.
@@ -53,7 +55,7 @@ The design was approved by the client; keep changes faithful to it unless asked 
   (Hagrid needs a web licence).
 - Contact form only shows a thank-you message — connect a form service or booking tool (TODO in `site.js`)
   and update the privacy policy to match.
-- Replace placeholders in square brackets: `[HOURS]`, `[PRICE]`, `[TIME]`, `[+49 PHONE]`,
+- Replace placeholders in square brackets: `[PRICE]`, `[TIME]`, `[+49 PHONE]`,
   `[hello@yourdomain.de]`, Impressum details (company, owner, VAT ID), Instagram handle.
 - Higher-resolution photos (hero ≥ 2000 px wide) and team photos on the About pages.
 - Map on the contact page: embed only after consent (GDPR).
