@@ -97,45 +97,13 @@ a{color:#580a20}a:hover{color:#362017}
 
 <section data-sec style="max-width: 1320px; margin: 0 auto; padding: 96px 32px 40px; display: flex; flex-direction: column; gap: 24px">
 <div style="font-size: 13px; letter-spacing: 0.3em; font-weight: 500; color: #580a20">CONTACT</div>
-<h1 style="margin: 0; font-family: 'Hagrid', 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(45px, 6.4vw, 96px); line-height: 1; letter-spacing: -0.015em; color: #580a20">say hello.</h1>
+<h1 style="margin: 0; font-family: 'Hagrid', 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(45px, 6.4vw, 96px); line-height: 1; letter-spacing: -0.015em; color: #580a20">say bonjour.</h1>
 <p style="margin: 0; font-size: 19px; line-height: 1.6; max-width: 620px">Request an appointment, ask a question or just say hi — we’ll get back to you within one working day.</p>
 </section>
 
 <section style="max-width: 1320px; margin: 0 auto; padding: 40px 32px 128px; display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start">
-<div style="flex: 999 1 560px; min-width: 0">
-<div data-if="sent" hidden>
-<div role="status" style="border: 1px solid rgba(54,32,23,0.25); border-radius: 28px; padding: 56px; display: flex; flex-direction: column; gap: 16px">
-<div style="font-family: 'Hagrid', 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 46px; letter-spacing: -0.015em; color: #580a20; line-height: 1.02">thank you.</div>
-<p style="margin: 0; font-size: 19px; line-height: 1.6">Your message has arrived. We’ll get back to you within one working day.</p>
-<button type="button" data-contact-reset style="align-self: flex-start; min-height: 48px; padding: 0 26px; border-radius: 999px; border: 1px solid rgba(54,32,23,0.35); background: transparent; color: #362017; font-family: 'Glacial Indifference', 'Jost', sans-serif; font-size: 12px; font-weight: 400; letter-spacing: 0.16em; text-transform: uppercase; cursor: pointer">New message</button>
-</div>
-</div>
-<div data-if="notSent">
-<form data-contact-form style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 22px">
-<label class="f-lab">NAME *<input class="f-in" type="text" name="name" autocomplete="name" required></label>
-<label class="f-lab">EMAIL *<input class="f-in" type="email" name="email" autocomplete="email" required></label>
-<label class="f-lab">PHONE<input class="f-in" type="tel" name="phone" autocomplete="tel"></label>
-<label class="f-lab">TREATMENT
-<select class="f-in" name="treatment">
-<option>Please choose</option><option>Facial</option><option>Massage &amp; body</option><option>Brows &amp; lashes</option><option>Wellness</option><option>Membership</option><option>Skin consultation</option><option>Cancel a contract</option>
-</select>
-</label>
-<label class="f-lab" style="grid-column: 1 / -1">PREFERRED DATE<input class="f-in" type="text" name="date" placeholder="e.g. Tuesday afternoon"></label>
-<label class="f-lab" style="grid-column: 1 / -1">MESSAGE<textarea class="f-in" name="message" rows="5" style="resize: vertical"></textarea></label>
-<label style="grid-column: 1 / -1; display: flex; gap: 14px; align-items: flex-start; font-size: 16px; line-height: 1.55; cursor: pointer">
-<input type="checkbox" required style="width: 22px; height: 22px; margin: 2px 0 0; accent-color: #580a20; flex-shrink: 0">
-<span>I have read the <a href="../en/privacy.html" style="color: #580a20">privacy policy</a> and agree that my details are processed to handle my request. *</span>
-</label>
-<div style="grid-column: 1 / -1; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px">
-<span style="font-size: 14px">* Required</span>
-<button type="submit" style="min-height: 58px; padding: 0 40px; border-radius: 999px; border: 0; background: #580a20; color: #f7ede0; font-family: 'Glacial Indifference', 'Jost', sans-serif; font-size: 12.5px; font-weight: 400; letter-spacing: 0.16em; text-transform: uppercase; cursor: pointer; transition: background-color .3s ease">Send request</button>
-</div>
-</form>
-</div>
-</div>
-
-<aside data-reveal style="flex: 1 1 360px; display: flex; flex-direction: column; gap: 20px">
-<div style="background: linear-gradient(150deg, #4a2418 0%, #362017 100%); color: #f7ede0; border: 1px solid rgba(247,237,224,0.1); border-radius: 28px; padding: 40px; display: flex; flex-direction: column; gap: 28px">
+<aside data-reveal style="flex: 1 1 100%; display: flex; flex-wrap: wrap; gap: 20px; align-items: stretch">
+<div style="flex: 1 1 360px; background: linear-gradient(150deg, #4a2418 0%, #362017 100%); color: #f7ede0; border: 1px solid rgba(247,237,224,0.1); border-radius: 28px; padding: 40px; display: flex; flex-direction: column; gap: 28px">
 <div style="display: flex; flex-direction: column; gap: 8px">
 <div style="font-size: 12px; letter-spacing: 0.28em; font-weight: 500">STUDIO</div>
 <div style="font-size: 18px; line-height: 1.6">Reset Wellness<br>Auguststraße 88<br>10117 Berlin</div>
@@ -147,12 +115,12 @@ a{color:#580a20}a:hover{color:#362017}
 </div>
 <div style="display: flex; flex-direction: column; gap: 8px">
 <div style="font-size: 12px; letter-spacing: 0.28em; font-weight: 500">OPENING HOURS</div>
-<div style="font-size: 18px; line-height: 1.6; white-space: pre-line">Mon – Fri  [HOURS]
-Sat  [HOURS]
+<div style="font-size: 18px; line-height: 1.6; white-space: pre-line">Mon – Fri  10am – 6pm
+Sat  9am – 5pm
 Sun  closed</div>
 </div>
 </div>
-<div role="img" aria-label="Map placeholder" style="height: 260px; border-radius: 28px; background: rgba(54,32,23,0.05); border: 1px dashed rgba(54,32,23,0.3); display: flex; align-items: center; justify-content: center; text-align: center; padding: 24px; font-size: 13px; letter-spacing: 0.2em; font-weight: 500; color: rgba(54,32,23,0.6)">[MAP – load only after consent]</div>
+<div role="img" aria-label="Map placeholder" style="flex: 1 1 360px; min-height: 260px; border-radius: 28px; background: rgba(54,32,23,0.05); border: 1px dashed rgba(54,32,23,0.3); display: flex; align-items: center; justify-content: center; text-align: center; padding: 24px; font-size: 13px; letter-spacing: 0.2em; font-weight: 500; color: rgba(54,32,23,0.6)">[MAP – load only after consent]</div>
 </aside>
 </section>
 
@@ -172,8 +140,8 @@ Sun  closed</div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; font-size: 15px; line-height: 1.7">
 <div style="font-size: 11px; letter-spacing: 0.24em; opacity: 0.7">OPENING HOURS</div>
-<div style="white-space: pre-line">Mon – Fri  [HOURS]
-Sat  [HOURS]</div>
+<div style="white-space: pre-line">Mon – Fri  10am – 6pm
+Sat  9am – 5pm</div>
 </div>
 <nav aria-label="Legal" style="display: flex; flex-direction: column; gap: 2px">
 <div style="font-size: 11px; letter-spacing: 0.24em; opacity: 0.7; margin-bottom: 6px">LEGAL</div>
