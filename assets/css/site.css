@@ -10,7 +10,7 @@ body{margin:0;background:#362017;-webkit-font-smoothing:antialiased}
 img{max-width:100%}
 a{color:#f7ede0}
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #ecd3c3;outline-offset:3px}
-h1,h2,h3{overflow-wrap:break-word;hyphens:auto}
+h1,h2,h3{overflow-wrap:break-word;hyphens:manual}
 
 /* shared finishes */
 .btn-fill{transition:background-color .3s ease,transform .3s ease}
@@ -90,7 +90,7 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto}
   [style*="min-height: 520px"]{min-height:360px !important}
   .tile-bg[style*="padding: 48px"]{padding:20px !important}
   [style*="font-size: 19px"],[style*="font-size: 18px"]{font-size:16.5px !important}
-  [style*="font-size: 58px"]{font-size:48px !important}
+  [style*="font-size: 58px"]{font-size:9vw !important}
   nav[aria-label="CONTENTS"],nav[aria-label="INHALT"]{display:none !important}
 }
 
