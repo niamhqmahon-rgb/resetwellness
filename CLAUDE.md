@@ -56,7 +56,7 @@ The design was approved by the client; keep changes faithful to it unless asked 
 - Contact form only shows a thank-you message — connect a form service or booking tool (TODO in `site.js`)
   and update the privacy policy to match.
 - Replace placeholders in square brackets: `[PRICE]`, `[TIME]`, `[+49 PHONE]`,
-  `[hello@yourdomain.de]`, Impressum details (company, owner, VAT ID), Instagram handle.
+  Impressum details (company, owner, VAT ID), Instagram handle.
 - Higher-resolution photos (hero ≥ 2000 px wide) and team photos on the About pages.
 - Map on the contact page: embed only after consent (GDPR).
 - Legal texts are drafts — need a lawyer's review. "Verträge hier kündigen" needs a real
