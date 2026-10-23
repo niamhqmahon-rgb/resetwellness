@@ -53,8 +53,9 @@ The design was approved by the client; keep changes faithful to it unless asked 
 ## Open before launch
 - Add licensed web font files to `assets/fonts/` and `url(...)` sources to the `@font-face` rules in `site.css`
   (Hagrid needs a web licence).
-- Contact form only shows a thank-you message — connect a form service or booking tool (TODO in `site.js`)
-  and update the privacy policy to match.
+- Booking: the owners are setting up **Fresha**. Point the "Book now" buttons (now → contact page) at the Fresha link
+  and add Fresha to the privacy policy (section 5, `[BOOKING TOOL]` / `[BUCHUNGSTOOL]`).
+  The contact form was removed from the contact page and the privacy policy; its JS in `site.js` is unused.
 - Replace placeholders in square brackets: `[PRICE]`, `[TIME]`, `[+49 PHONE]`,
   Impressum details (company, owner, VAT ID), Instagram handle.
 - Higher-resolution photos (hero ≥ 2000 px wide) and team photos on the About pages.
