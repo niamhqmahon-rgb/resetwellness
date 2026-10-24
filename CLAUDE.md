@@ -1,7 +1,7 @@
 # Reset Wellness — project guide for Claude
 
 Static, bilingual website for **Reset Wellness**, a membership-based beauty & wellness studio
-at Auguststraße 88, 10117 Berlin. Founders: Laura Guegan & Lysa Gouffie.
+at Auguststraße 88, 10117 Berlin. Founders: Laura Guegan & Lysa Gouffi.
 The design was approved by the client; keep changes faithful to it unless asked otherwise.
 
 ## Tech
