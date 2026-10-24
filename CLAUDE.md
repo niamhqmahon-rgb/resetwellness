@@ -33,6 +33,13 @@ The design was approved by the client; keep changes faithful to it unless asked 
   Content-Security-Policy. No inline `<script>` and no third-party scripts/styles/fonts; the only allowed
   frame is Google Maps. If you add an external service (e.g. Fresha widget), extend the CSP for it.
 
+## Booking
+- Online booking is **Fresha**: `https://l.fresha.com/3jvcshkwm` (plain link, `target="_blank" rel="noopener"`).
+  All "Book now" / "Book an appointment" / "Book a skin consultation" / "Termin buchen" / "Jetzt buchen" /
+  "Hautberatung buchen" buttons and "Book online" / "Online buchen" on the contact page use it.
+  "Enquire" / "Anfragen" buttons (memberships, microneedling packages) still go to the contact page.
+  Fresha is described in the privacy policy, section 5. If a Fresha *widget* is ever embedded, extend the CSP.
+
 ## Rules when editing
 - **Every content change goes into both languages.** Edit the German and the English twin together,
   and keep their structure identical. German copy uses informal "du".
@@ -59,9 +66,7 @@ The design was approved by the client; keep changes faithful to it unless asked 
 ## Open before launch
 - Add licensed web font files to `assets/fonts/` and `url(...)` sources to the `@font-face` rules in `site.css`
   (Hagrid needs a web licence).
-- Booking: the owners are setting up **Fresha**. Point the "Book now" buttons (now → contact page) at the Fresha link
-  and add Fresha to the privacy policy (section 5, `[BOOKING TOOL]` / `[BUCHUNGSTOOL]`).
-  The contact form was removed from the contact page and the privacy policy; its JS in `site.js` is unused.
+- Contact form was removed from the contact page and the privacy policy; its JS in `site.js` is unused.
 - Replace remaining placeholders in square brackets: VAT ID, photo credits, Instagram handle,
   "last updated" dates (set on launch day).
 - Hosting: **Hostinger** (named in the privacy policy, section 2). The owners need to accept Hostinger's
