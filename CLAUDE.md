@@ -56,8 +56,8 @@ The design was approved by the client; keep changes faithful to it unless asked 
 - Booking: the owners are setting up **Fresha**. Point the "Book now" buttons (now → contact page) at the Fresha link
   and add Fresha to the privacy policy (section 5, `[BOOKING TOOL]` / `[BUCHUNGSTOOL]`).
   The contact form was removed from the contact page and the privacy policy; its JS in `site.js` is unused.
-- Replace placeholders in square brackets: `[PRICE]`, `[TIME]`, `[+49 PHONE]`,
-  Impressum details (VAT ID, photo credits), Instagram handle.
+- Replace remaining placeholders in square brackets: VAT ID, photo credits, Instagram handle,
+  hosting provider, log retention days, "last updated" dates, data protection authority.
 - Higher-resolution photos (hero ≥ 2000 px wide) and team photos on the About pages.
 - Map on the contact page: embed only after consent (GDPR).
 - Legal texts are drafts — need a lawyer's review. Before memberships launch, add a real
