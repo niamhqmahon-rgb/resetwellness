@@ -4,6 +4,13 @@
    assets/fonts/ and add url(...) sources to the @font-face rules below. */
 @font-face{font-family:'Hagrid';src:local('Hagrid Bold'),local('Hagrid-Bold'),local('Hagrid');font-weight:100 900;font-style:normal;font-display:swap}@font-face{font-family:'Glacial Indifference';src:local('Glacial Indifference'),local('GlacialIndifference-Regular'),local('Glacial Indifference Regular');font-weight:100 600;font-style:normal;font-display:swap}@font-face{font-family:'Glacial Indifference';src:local('Glacial Indifference Bold'),local('GlacialIndifference-Bold');font-weight:700 900;font-style:normal;font-display:swap}
 
+/* Fallback fonts, served from this site (not Google) so no visitor data goes to Google.
+   Bricolage Grotesque and Jost, SIL Open Font License (see assets/fonts/LICENSE-*.txt). */
+@font-face{font-family:'Bricolage Grotesque';src:url(../fonts/bricolage-grotesque-latin-opsz-normal.woff2) format('woff2-variations'),url(../fonts/bricolage-grotesque-latin-opsz-normal.woff2) format('woff2');font-weight:200 800;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Jost';src:url(../fonts/jost-latin-300-normal.woff2) format('woff2');font-weight:300;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Jost';src:url(../fonts/jost-latin-400-normal.woff2) format('woff2');font-weight:400;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Jost';src:url(../fonts/jost-latin-500-normal.woff2) format('woff2');font-weight:500;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 body{margin:0;background:#362017;-webkit-font-smoothing:antialiased}
 ::selection{background:#f7ede0;color:#580a20}

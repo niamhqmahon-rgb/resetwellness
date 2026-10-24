@@ -7,13 +7,7 @@
 <link rel="alternate" hreflang="de" href="de/index.html">
 <link rel="alternate" hreflang="en" href="en/index.html">
 <meta http-equiv="refresh" content="0; url=de/index.html">
-<script>
-  // Send English-speaking browsers to the English site, everyone else to German.
-  (function () {
-    var l = (navigator.languages && navigator.languages[0]) || navigator.language || 'de';
-    location.replace(/^en\b/i.test(l) ? 'en/index.html' : 'de/index.html');
-  })();
-</script>
+<script src="assets/js/lang.js"></script>
 <style>body{margin:0;background:#f7ede0;color:#362017;font-family:system-ui,sans-serif;display:flex;min-height:100vh;align-items:center;justify-content:center}a{color:#580a20;margin:0 10px}</style>
 </head>
 <body>
