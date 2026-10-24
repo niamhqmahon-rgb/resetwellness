@@ -36,12 +36,13 @@ RedirectMatch 404 /\.(?!well-known)
   Header always set Cross-Origin-Opener-Policy "same-origin"
 </IfModule>
 
-# Let browsers cache fonts, images, styles and scripts.
-<IfModule mod_expires.c>
-  ExpiresActive On
-  ExpiresByType font/woff2 "access plus 1 year"
-  ExpiresByType image/jpeg "access plus 1 month"
-  ExpiresByType text/css "access plus 1 week"
-  ExpiresByType application/javascript "access plus 1 week"
-  ExpiresByType text/javascript "access plus 1 week"
+# Caching: pages, styles and scripts are always checked for a newer version (so edits show up
+# right away); fonts and images may be stored by the browser.
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|css|js)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+  <FilesMatch "\.(woff2|jpg|jpeg|png|webp|svg)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
 </IfModule>
