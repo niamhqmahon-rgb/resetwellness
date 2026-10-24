@@ -52,6 +52,9 @@ The design was approved by the client; keep changes faithful to it unless asked 
   the phone layout relies on attribute selectors there (e.g. `[style*="max-width: 1200px"]`), so check
   `site.css` before changing those inline values.
 - Keep Impressum, Datenschutz and AGB linked from the footer of every page (German legal requirement).
+- Every page has a meta description and Open Graph / Twitter tags (link previews in WhatsApp, Instagram etc.)
+  right after `<title>`: absolute `og:url` and `og:image` (`assets/images/share.jpg`, 1200×630). Add them to new pages
+  and update the description when a page's content changes. Descriptions follow the no dashes rule too.
 - Keep it accessible: real `<a>`/`<button>`, alt text on images, visible focus, ≥ 44px touch targets.
 
 ## Brand
