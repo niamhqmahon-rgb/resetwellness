@@ -7,7 +7,8 @@ The design was approved by the client; keep changes faithful to it unless asked 
 ## Tech
 - Plain HTML, CSS and vanilla JS. No framework, no build step, no package manager.
 - Preview: `python3 -m http.server 8000` in the repo root → http://localhost:8000
-- Hosting target: any static host (GitHub Pages works from `main`, root folder).
+- Hosting: Hostinger (static files; upload the repo root or deploy via Git from `main`).
+  GitHub Pages on the working branch is used as a preview.
 
 ## Structure
 - `index.html` — language redirect (German default; English for English browsers).
@@ -57,7 +58,9 @@ The design was approved by the client; keep changes faithful to it unless asked 
   and add Fresha to the privacy policy (section 5, `[BOOKING TOOL]` / `[BUCHUNGSTOOL]`).
   The contact form was removed from the contact page and the privacy policy; its JS in `site.js` is unused.
 - Replace remaining placeholders in square brackets: VAT ID, photo credits, Instagram handle,
-  hosting provider, log retention days, "last updated" dates, data protection authority.
+  "last updated" dates (set on launch day).
+- Hosting: **Hostinger** (named in the privacy policy, section 2). The owners need to accept Hostinger's
+  data processing agreement (Art. 28 GDPR). Register court: Amtsgericht Charlottenburg (confirmed).
 - Higher-resolution photos (hero ≥ 2000 px wide) and team photos on the About pages.
 - Map on the contact page: embed only after consent (GDPR).
 - Legal texts are drafts — need a lawyer's review. Before memberships launch, add a real
