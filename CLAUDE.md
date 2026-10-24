@@ -28,6 +28,10 @@ The design was approved by the client; keep changes faithful to it unless asked 
 - `assets/css/site.css` — shared styles: buttons, tile backgrounds, scroll-reveal, responsive rules.
 - `assets/js/site.js` — header on scroll + progress bar, mobile menu, reveal on scroll, back-to-top, contact form.
 - `assets/images/` — hero, studio sign, foam monogram, tile texture.
+- `assets/fonts/` — self-hosted fallback fonts + licences. `assets/js/lang.js` — language redirect for `/`.
+- `.htaccess` — Hostinger settings: force HTTPS, hide dot files and `.md`, security headers incl. a
+  Content-Security-Policy. No inline `<script>` and no third-party scripts/styles/fonts; the only allowed
+  frame is Google Maps. If you add an external service (e.g. Fresha widget), extend the CSP for it.
 
 ## Rules when editing
 - **Every content change goes into both languages.** Edit the German and the English twin together,
@@ -48,7 +52,8 @@ The design was approved by the client; keep changes faithful to it unless asked 
   Burgundy leads; brown and cream support it. Buttons: brown pill + cream text on light backgrounds,
   cream pill + brown text on dark backgrounds.
 - Fonts: **Hagrid Bold** for headings only, **Glacial Indifference** for all other text.
-  Currently loaded via `local()` with fallbacks Bricolage Grotesque / Jost (Google Fonts).
+  Currently loaded via `local()` with fallbacks Bricolage Grotesque / Jost, **self-hosted** in `assets/fonts/`
+  (OFL). Never link Google Fonts or other font CDNs: it sends visitor IPs to Google (GDPR).
 - Look: burgundy glazed-tile texture, frosted-cream glass cards, rounded "sheet" sections, soft scroll reveals.
 
 ## Open before launch
