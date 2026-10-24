@@ -7,7 +7,8 @@ The design was approved by the client; keep changes faithful to it unless asked 
 ## Tech
 - Plain HTML, CSS and vanilla JS. No framework, no build step, no package manager.
 - Preview: `python3 -m http.server 8000` in the repo root → http://localhost:8000
-- Hosting target: any static host (GitHub Pages works from `main`, root folder).
+- Hosting: Hostinger (static files; upload the repo root or deploy via Git from `main`).
+  GitHub Pages on the working branch is used as a preview.
 
 ## Structure
 - `index.html` — language redirect (German default; English for English browsers).
@@ -31,6 +32,8 @@ The design was approved by the client; keep changes faithful to it unless asked 
 ## Rules when editing
 - **Every content change goes into both languages.** Edit the German and the English twin together,
   and keep their structure identical. German copy uses informal "du".
+- **No dashes in visible text** (no —, –, or hyphenated words), in either language: use commas, full stops,
+  "to"/"bis" for ranges, or rewrite. Client request.
 - The header (nav) and footer are repeated in every page — change them in all 16 files.
 - The EN/DE switch links each page to its twin, and each page has `hreflang` alternates; keep them correct
   when renaming or adding pages.
@@ -51,11 +54,15 @@ The design was approved by the client; keep changes faithful to it unless asked 
 ## Open before launch
 - Add licensed web font files to `assets/fonts/` and `url(...)` sources to the `@font-face` rules in `site.css`
   (Hagrid needs a web licence).
-- Contact form only shows a thank-you message — connect a form service or booking tool (TODO in `site.js`)
-  and update the privacy policy to match.
-- Replace placeholders in square brackets: `[HOURS]`, `[PRICE]`, `[TIME]`, `[+49 PHONE]`,
-  `[hello@yourdomain.de]`, Impressum details (company, owner, VAT ID), Instagram handle.
+- Booking: the owners are setting up **Fresha**. Point the "Book now" buttons (now → contact page) at the Fresha link
+  and add Fresha to the privacy policy (section 5, `[BOOKING TOOL]` / `[BUCHUNGSTOOL]`).
+  The contact form was removed from the contact page and the privacy policy; its JS in `site.js` is unused.
+- Replace remaining placeholders in square brackets: VAT ID, photo credits, Instagram handle,
+  "last updated" dates (set on launch day).
+- Hosting: **Hostinger** (named in the privacy policy, section 2). The owners need to accept Hostinger's
+  data processing agreement (Art. 28 GDPR). Register court: Amtsgericht Charlottenburg (confirmed).
 - Higher-resolution photos (hero ≥ 2000 px wide) and team photos on the About pages.
 - Map on the contact page: embed only after consent (GDPR).
-- Legal texts are drafts — need a lawyer's review. "Verträge hier kündigen" needs a real
-  cancellation page for memberships (§ 312k BGB).
+- Legal texts are drafts — need a lawyer's review. Before memberships launch, add a real
+  cancellation page and put a "Verträge hier kündigen" / "Cancel contract here" link back in every footer (§ 312k BGB).
+  The footer link was removed while memberships are "coming soon".

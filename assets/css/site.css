@@ -10,7 +10,7 @@ body{margin:0;background:#362017;-webkit-font-smoothing:antialiased}
 img{max-width:100%}
 a{color:#f7ede0}
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #ecd3c3;outline-offset:3px}
-h1,h2,h3{overflow-wrap:break-word;hyphens:auto}
+h1,h2,h3{overflow-wrap:break-word;hyphens:manual}
 
 /* shared finishes */
 .btn-fill{transition:background-color .3s ease,transform .3s ease}
@@ -90,7 +90,7 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto}
   [style*="min-height: 520px"]{min-height:360px !important}
   .tile-bg[style*="padding: 48px"]{padding:20px !important}
   [style*="font-size: 19px"],[style*="font-size: 18px"]{font-size:16.5px !important}
-  [style*="font-size: 58px"]{font-size:48px !important}
+  [style*="font-size: 58px"]{font-size:9vw !important}
   nav[aria-label="CONTENTS"],nav[aria-label="INHALT"]{display:none !important}
 }
 
@@ -100,3 +100,9 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto}
 
 /* static-site helpers */
 [data-if][hidden],.to-top[hidden]{display:none !important}
+
+/* "coming soon": frosted content with a bubble on top */
+.is-soon{overflow:hidden}
+.soon-blur > *{filter:blur(7px);opacity:.75;user-select:none;-webkit-user-select:none}
+.soon-badge{position:absolute;top:50%;left:50%;z-index:2;transform:translate(-50%,-50%) rotate(-5deg);white-space:nowrap;font-family:'Glacial Indifference','Jost',sans-serif;font-weight:400;font-size:19px;padding:9px 20px;border-radius:999px;box-shadow:0 10px 26px rgba(20,8,4,.3)}
+.soon-badge-sm{font-size:15px;padding:6px 14px}

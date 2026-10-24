@@ -72,6 +72,23 @@
     document.querySelectorAll('[data-reveal]').forEach(function (el) { io.observe(el); });
   }
 
+  /* ---------- map: Google Maps loads only after the visitor clicks (GDPR) ---------- */
+  document.querySelectorAll('[data-map]').forEach(function (box) {
+    var btn = box.querySelector('[data-map-load]');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      var frame = document.createElement('iframe');
+      frame.src = box.getAttribute('data-map-src');
+      frame.title = box.getAttribute('data-map-title');
+      frame.loading = 'lazy';
+      frame.referrerPolicy = 'no-referrer-when-downgrade';
+      frame.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:0';
+      box.innerHTML = '';
+      box.appendChild(frame);
+      frame.focus();
+    });
+  });
+
   /* ---------- contact form ----------
      TODO: connect to a real form service or your booking system.
      Right now the form only shows the thank-you message and sends nothing. */
