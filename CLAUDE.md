@@ -27,7 +27,8 @@ The design was approved by the client; keep changes faithful to it unless asked 
 
 - `assets/css/site.css` — shared styles: buttons, tile backgrounds, scroll-reveal, responsive rules.
 - `assets/js/site.js` — header on scroll + progress bar, mobile menu, reveal on scroll, back-to-top, contact form.
-- `assets/images/` — hero, studio sign, foam monogram, tile texture.
+- `assets/images/` — hero, studio sign, foam monogram, `tile-grid.jpg` (tile texture, cropped on grout lines so it repeats
+  seamlessly; shown at 167px wide), `share.jpg` (link preview). Images are cached 30 days: give a changed image a new file name.
 - `assets/fonts/` — self-hosted fallback fonts + licences. `assets/js/lang.js` — language redirect for `/`.
 - `.htaccess` — Hostinger settings: force HTTPS, hide dot files and `.md`, security headers incl. a
   Content-Security-Policy. No inline `<script>` and no third-party scripts/styles/fonts; the only allowed
