@@ -35,6 +35,7 @@ The design was approved by the client; keep changes faithful to it unless asked 
   frame is Google Maps. If you add an external service (e.g. Fresha widget), extend the CSP for it.
 
 ## Booking
+- Instagram: https://www.instagram.com/reset.wellnessstudio/ (footer link on every page).
 - Online booking is **Fresha**: `https://l.fresha.com/3jvcshkwm` (plain link, `target="_blank" rel="noopener"`).
   All "Book now" / "Book an appointment" / "Book a skin consultation" / "Termin buchen" / "Jetzt buchen" /
   "Hautberatung buchen" buttons and "Book online" / "Online buchen" on the contact page use it.
@@ -71,7 +72,7 @@ The design was approved by the client; keep changes faithful to it unless asked 
 - Add licensed web font files to `assets/fonts/` and `url(...)` sources to the `@font-face` rules in `site.css`
   (Hagrid needs a web licence).
 - Contact form was removed from the contact page and the privacy policy; its JS in `site.js` is unused.
-- Replace remaining placeholders in square brackets: VAT ID, photo credits, Instagram handle,
+- Replace remaining placeholders in square brackets: VAT ID, photo credits,
   "last updated" dates (set on launch day).
 - Hosting: **Hostinger** (named in the privacy policy, section 2). The owners need to accept Hostinger's
   data processing agreement (Art. 28 GDPR). Register court: Amtsgericht Charlottenburg (confirmed).
