@@ -47,6 +47,8 @@ The design was approved by the client; keep changes faithful to it unless asked 
   and keep their structure identical. German copy uses informal "du".
 - **No dashes in visible text** (no —, –, or hyphenated words), in either language: use commas, full stops,
   "to"/"bis" for ranges, or rewrite. Client request.
+  Exception (client request): opening hours use the format "TUE - FRI / 10:00 - 19:00" / "DI - FR / 10:00 - 19:00",
+  three lines (weekdays, Saturday, closed days) in every footer and the contact page studio box.
 - The header (nav) and footer are repeated in every page — change them in all 16 files.
 - The EN/DE switch links each page to its twin, and each page has `hreflang` alternates; keep them correct
   when renaming or adding pages.
