@@ -78,7 +78,7 @@ The design was approved by the client; keep changes faithful to it unless asked 
   (Hagrid needs a web licence).
 - Contact form was removed from the contact page and the privacy policy; its JS in `site.js` is unused.
 - Replace remaining placeholders in square brackets: VAT ID, photo credits,
-  "last updated" dates (set on launch day).
+  (privacy policy and terms dated 08.11.2026; update the date when their text changes).
 - Hosting: **Hostinger** (named in the privacy policy, section 2). The owners need to accept Hostinger's
   data processing agreement (Art. 28 GDPR). Register court: Amtsgericht Charlottenburg (confirmed).
 - Higher-resolution photos (hero ≥ 2000 px wide) and team photos on the About pages.
