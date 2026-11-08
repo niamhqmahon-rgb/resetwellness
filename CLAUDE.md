@@ -40,7 +40,9 @@ The design was approved by the client; keep changes faithful to it unless asked 
   All "Book now" / "Book an appointment" / "Book a skin consultation" / "Termin buchen" / "Jetzt buchen" /
   "Hautberatung buchen" buttons and "Book online" / "Online buchen" on the contact page use it.
   "Enquire" / "Anfragen" buttons (memberships, microneedling packages) still go to the contact page.
-  Fresha is described in the privacy policy, section 5. If a Fresha *widget* is ever embedded, extend the CSP.
+  Fresha is described in the privacy policy, section 5 (client-supplied text with links to Fresha's Terms of Service
+  and Privacy Policy at terms.fresha.com), and every footer has a "powered by Fresha" notice with the same two links.
+  If a Fresha *widget* is ever embedded, extend the CSP.
 
 ## Rules when editing
 - **Every content change goes into both languages.** Edit the German and the English twin together,
