@@ -31,8 +31,8 @@ The design was approved by the client; keep changes faithful to it unless asked 
   seamlessly; shown at 167px wide), `share.jpg` (link preview). Images are cached 30 days: give a changed image a new file name.
 - `assets/fonts/` — self-hosted fallback fonts + licences. `assets/js/lang.js` — language redirect for `/`.
 - `.htaccess` — Hostinger settings: force HTTPS, hide dot files and `.md`, security headers incl. a
-  Content-Security-Policy. No inline `<script>` and no third-party scripts/styles/fonts; the only allowed
-  frame is Google Maps. If you add an external service (e.g. Fresha widget), extend the CSP for it.
+  Content-Security-Policy. No inline `<script>` and no third-party scripts/styles/fonts except Google Analytics
+  (consent only, see Analytics); the only allowed frame is Google Maps. If you add an external service (e.g. Fresha widget), extend the CSP for it.
 
 ## Booking
 - Instagram: https://www.instagram.com/reset.wellnessstudio/ (footer link on every page).
@@ -44,6 +44,13 @@ The design was approved by the client; keep changes faithful to it unless asked 
   Terms of Service and Privacy Policy at terms.fresha.com). Every footer: "Online bookings are powered by Fresha." and
   "Fresha Privacy Policy | Fresha Terms of Service" (DE: "Fresha Datenschutz | Fresha Nutzungsbedingungen").
   If a Fresha *widget* is ever embedded, extend the CSP.
+
+## Analytics
+- **Google Analytics 4** (`G-R0SYE5QPHX`), loaded by `assets/js/consent.js` **only after "Accept"** in the cookie banner
+  (choice in localStorage `rw-consent`). Footer button "Cookie settings" / "Cookies verwalten" (`data-cookie-settings`)
+  reopens the banner; declining after accepting removes the `_ga` cookies. Both banner buttons must stay equally styled.
+  The CSP in `.htaccess` allows googletagmanager.com / google-analytics.com for this. Privacy policy section 7 covers it.
+  Never load GA (or any tracker) outside consent.js.
 
 ## Rules when editing
 - **Every content change goes into both languages.** Edit the German and the English twin together,
@@ -78,7 +85,7 @@ The design was approved by the client; keep changes faithful to it unless asked 
   (Hagrid needs a web licence).
 - Contact form was removed from the contact page and the privacy policy; its JS in `site.js` is unused.
 - Replace remaining placeholders in square brackets: VAT ID, photo credits,
-  (privacy policy and terms dated 08.11.2026; update the date when their text changes).
+  (privacy policy dated 10.11.2026, terms 08.11.2026; update the date when their text changes).
 - Hosting: **Hostinger** (named in the privacy policy, section 2). The owners need to accept Hostinger's
   data processing agreement (Art. 28 GDPR). Register court: Amtsgericht Charlottenburg (confirmed).
 - Higher-resolution photos (hero ≥ 2000 px wide) and team photos on the About pages.
