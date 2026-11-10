@@ -113,3 +113,12 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:manual}
 .soon-blur > *{filter:blur(7px);opacity:.75;user-select:none;-webkit-user-select:none}
 .soon-badge{position:absolute;top:50%;left:50%;z-index:2;transform:translate(-50%,-50%) rotate(-5deg);white-space:nowrap;font-family:'Glacial Indifference','Jost',sans-serif;font-weight:400;font-size:19px;padding:9px 20px;border-radius:999px;box-shadow:0 10px 26px rgba(20,8,4,.3)}
 .soon-badge-sm{font-size:15px;padding:6px 14px}
+
+/* cookie consent banner (assets/js/consent.js): both choices look the same on purpose (no nudging) */
+.rw-consent{position:fixed;left:16px;right:16px;bottom:16px;z-index:70;max-width:560px;margin:0 auto;background:#f7ede0;color:#362017;border:1px solid rgba(54,32,23,.18);border-radius:24px;padding:22px 24px;box-shadow:0 24px 60px rgba(20,8,4,.35);font-family:'Glacial Indifference','Jost',sans-serif;font-size:15px;line-height:1.55}
+.rw-consent p{margin:0 0 16px}
+.rw-consent a{color:#580a20}
+.rw-consent-buttons{display:flex;flex-wrap:wrap;gap:10px}
+.rw-consent-btn{flex:1 1 140px;min-height:46px;padding:0 22px;border-radius:999px;border:1px solid #362017;background:#362017;color:#f7ede0;font-family:inherit;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;transition:background-color .3s ease}
+.rw-consent-btn:hover{background:#580a20;border-color:#580a20}
+.rw-cookie-link{background:none;border:0;padding:0;font:inherit;color:#f7ede0;font-size:15px;min-height:34px;display:inline-flex;align-items:center;cursor:pointer;text-align:left}
